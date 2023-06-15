@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap'); 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red; */
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(18, 73, 226);
+    padding:10px 0;
+}
+header img{
+    width:130px;
+    height:70px;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    text-decoration: none;
+    padding:10px ;
+    margin-left:10px;
+    color:white;
+}
+header a:hover{
+    background-color: rgba(12, 144, 231, 0.897);
+    transition: .8s;
+    border-radius: 10px;
+}
+main nav li{
+    display: inline-block;
+    margin-left: 15px;
+    padding:10px;
+}
+main nav {
+    padding:20px 0;
+    text-align: center;
+}
+main nav a{
+    color:gray;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom: 2px solid #00cad1;
+}
+.especialidade-02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(143, 135, 135);
+    margin-top: 20px;
+}
+.comum-classe{
+    max-width: 550px;
+    text-align: center;
+    margin:20px 0;
+}
+.comum-classe h2{
+    padding:10px;
+    font-size: 26px;
+}
+.comum-classe p{
+    margin:10px
+}
+.tabela{
+    max-width:1024px;
+    display: flex;
+    margin:20px 0;
+}
+.tabela table {
+    width:1024px;
+}
+.tabela img{
+    width:300px;
+    height:100%;
+}
+table thead tr th {
+    padding:10px;
+}
+table thead tr:nth-of-type(odd){
+    background-color: #00cad1;
+    color:white;
+}
+table tbody tr:nth-of-type(odd){
+    background-color: rgb(202, 192, 192);
+}
+footer{
+    text-align: center;
+    background-color: rgb(18, 73, 226);
+    padding:20px;
+}
+footer img{
+    width:120px;
+    height:70px;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 14px;
+}
+footer ul{
+    list-style: none;
+}
+@media (max-width:1040px){
+    .tabela{
+        width:90%;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        justify-content: space-between;
+    }
+    .tabela img{
+        display: none;
+    }
+    .tabela{
+        width:90%;
+        height:200px;
+        margin:0 15px;
+    }
+}
+@media (max-width:425px){
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        width:90%;
+        display: flex;
+        justify-content:space-around;
+        margin-top:20px;
+        padding:10px 0 25px;
+        border-top: 1px solid #ccc;
+    }
+    main nav ul li a {
+        font-size: 16px;
+    }
+}

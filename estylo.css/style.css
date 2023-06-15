@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap'); 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red; */
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(18, 73, 226);
+    padding:10px 0;
+}
+header img{
+    width:130px;
+    height:70px;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    text-decoration: none;
+    padding:10px ;
+    margin-left:10px;
+    color:white;
+}
+header a:hover{
+    background-color: rgba(12, 144, 231, 0.897);
+    transition: .8s;
+    border-radius: 10px;
+}
+.limita-secao{
+    max-width:1024px;
+    margin:0 auto;
+    margin-top:40px;
+}
+.limita-secao-02{
+    max-width:640px;
+    margin:0 auto;
+    margin-top:40px;
+    text-align: center;
+}
+.limita-secao p, .limita-secao-02 p{
+    color:#004b4c;
+}
+.topo{
+    width:100%;
+    height:400px;
+    background-image: url(/assets/recepcao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.topo div{
+    color:white;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top:32%;
+    left:17%;
+}
+.topo div p{
+    font-size:32px;
+    font-weight: 600;
+}
+.sobre-clinica p{
+    margin:20px 0 10px 0;
+}
+.informacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.informacoes h3{
+    font-size: 18px;
+}
+.informacoes ul{
+    text-align: start;
+}
+.multiespecialidades {
+    padding:10px;
+}
+.multiespecialidades h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.img-multiespecialidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.img-multiespecialidades img{
+    width:300px;
+    flex: 1 1 300px;
+}
+.img-multiespecialidades figcaption{
+    padding:10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.img-multiespecialidades figure {
+    box-shadow: 1px 4px 7px black;
+    border-radius:2px;
+}
+section{
+    text-align: center;
+}
+section button {
+    margin:25px 0 0 0;
+    padding:15px;
+    text-transform: uppercase;
+    color:white;
+    background-color: rgb(18, 73, 226);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+section button:hover{
+    background-color:rgb(38, 211, 211);
+    transition: .8s;
+}
+.secao-final{
+    margin-bottom: 40px;
+}
+.contato h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contato p{
+    line-height: 40px;
+    font-size: 18px;
+}
+.contato span{
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    background-color: rgb(18, 73, 226);
+    padding:20px;
+}
+footer img{
+    width:120px;
+    height:70px;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 14px;
+}
+footer ul{
+    list-style: none;
+}
+footer nav{
+    display: inline-block;
+}
+@media (max-width:768px){
+    .informacoes img{
+        display: none;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topo div{
+        top:32%;
+        left:0%;
+    }
+    .topo div p {
+        font-size:26px;
+    }
+}
+@media (max-width:425px){
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        width:100%;
+        display: flex;
+        justify-content:space-around;
+        margin-top:20px;
+        padding:10px 0 25px;
+        border-top: 1px solid #ccc;
+    }
+}
